@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+
+<model xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:macro name="visual_environment" params="name prefix">
+	
+		<!-- link list -->
+	<link name="torno_pc">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/torno_pc.stl" scale="0.01 0.01 0.01"/>
+				<!--IF .STL IS IN mm DUE SOLIDWORKS CONFLICT USE: scale="0.001 0.001 0.001" in mesh line-->
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="red_steel">
+				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/red.png"/>
+			</material>
+		</visual>
+</link>
+
+	<link name="feeder_table_3">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/feeder_table.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor"/>
+		</visual>
+</link>
+
+	<link name="melfa">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/melfa.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="melfa_beige">
+				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/melfa_beige.png"/>
+			</material>
+		</visual>
+</link>
+
+	<link name="rail_melfa">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/rail_melfa.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor"/>
+		</visual>
+</link>
+
+	<link name="feeder">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/feeder.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor"/>
+		</visual>
+</link>
+
+	<link name="thermo_machine">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/thermo_machine.stl" scale="0.007 0.007 0.007"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="golden_steel">
+				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/gold.png"/>
+			</material>
+		</visual>
+</link>
+
+	<link name="UTM">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/UTM.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="melfa_beige"/>
+		</visual>
+</link>
+
+	<link name="xyz_robot">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/xyz_robot.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor">
+			</material>
+		</visual>
+</link>
+
+	<!--link name="lathe"> NOT IMPORTANT FOR THE FMS EMULATION -->
+		<!--visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/lathe.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_worktable">
+				<color rgba="${45/255} ${135/255} ${149/255} 1"/>
+			</material>
+		</visual>
+</link>
+
+	<link name="miller">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/miller.stl" scale="0.01 0.01 0.01"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="blue">
+				<color rgba="255 69 30 0.9"/>
+			</material>
+		</visual>
+</link-->
+
+		<!-- joint list -->
+	<joint name="torno_pc_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="torno_pc"/>
+		<origin xyz="0.897 4.078 -0.3" rpy="0 0 -1.5708"/>
+	</joint>
+		
+	<joint name="feeder_table_3_to_robot" type="fixed">
+		<parent link="feeder_table_2"/>
+		<child link="feeder_table_3"/>
+		<origin xyz="1.38 -0.74 0" rpy="0 0 0"/>
+	</joint>	
+	
+	<joint name="rail_melfa_to_robot" type="fixed">
+		<parent link="feeder_table_2"/>
+		<child link="rail_melfa"/>
+		<origin xyz="1.25 0 0.775" rpy="0 0 3.1416"/>
+	</joint>
+		
+	<joint name="melfa_to_rail" type="fixed">
+		<parent link="rail_melfa"/>
+		<child link="melfa"/>
+		<origin xyz="-0.5 0.15 -0.01" rpy="0 0 1.5708"/>
+	</joint>
+	
+	<joint name="thermo_machine_to_robot" type="fixed">
+		<parent link="conveyor"/>
+		<child link="thermo_machine"/>
+		<origin xyz="${1.99+0.325} -0.258 0" rpy="0 0 -1.5708"/>
+	</joint>
+	
+	<joint name="UTM_to_robot" type="fixed">
+		<parent link="thermo_machine"/>
+		<child link="UTM"/>
+		<origin xyz="1.86 -0.325 0" rpy="0 0 0"/>
+	</joint>
+	
+	<joint name="feeder_to_robot" type="fixed">
+		<parent link="feeder_table_3"/>
+		<child link="feeder"/>
+		<origin xyz="0.2 0.25 0.74" rpy="0 0 -3.1416"/>
+	</joint>
+	
+	<joint name="xyz_robot_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="xyz_robot"/>
+		<origin xyz="-1.04 1.13 -0.3" rpy="0 0 1.5708"/>
+	</joint>	
+	
+	<!--joint name="lathe_to_robot" type="fixed" NOT IMPORTANT TO FOR THE FMS EMULATION-->
+		<!--parent link="torso_base_link"/>
+		<child link="lathe"/>
+		<origin xyz="-3 0 0" rpy="0 0 0"/>
+	</joint>
+	
+	<joint name="miller_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="miller"/>
+		<origin xyz="-3 2 0" rpy="0 0 0"/>
+	</joint-->	
+		
+	</xacro:macro>
+	
+	<xacro:visual_environment name="visual_environment" prefix="visual_environment_"/>
+	
+</model>
