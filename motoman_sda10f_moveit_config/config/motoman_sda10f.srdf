@@ -66,10 +66,23 @@
     <disable_collisions link1="UTM" link2="feeder_table" reason="Never" />
     <disable_collisions link1="UTM" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="UTM" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="UTM" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="UTM" link2="kinect" reason="Never" />
     <disable_collisions link1="UTM" link2="kinect2" reason="Never" />
     <disable_collisions link1="UTM" link2="melfa" reason="Never" />
     <disable_collisions link1="UTM" link2="mps" reason="Never" />
+    <disable_collisions link1="UTM" link2="palm" reason="Never" />
     <disable_collisions link1="UTM" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="UTM" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="UTM" link2="robotiq_85_base_link" reason="Never" />
@@ -121,6 +134,7 @@
     <disable_collisions link1="arm_left_link_2_l" link2="arm_left_link_3_e" reason="Adjacent" />
     <disable_collisions link1="arm_left_link_2_l" link2="arm_left_link_4_u" reason="Never" />
     <disable_collisions link1="arm_left_link_2_l" link2="arm_left_link_5_r" reason="Never" />
+    <disable_collisions link1="arm_left_link_2_l" link2="arm_left_link_6_b" reason="Never" />
     <disable_collisions link1="arm_left_link_2_l" link2="arm_right_link_1_s" reason="Never" />
     <disable_collisions link1="arm_left_link_2_l" link2="arm_right_link_2_l" reason="Never" />
     <disable_collisions link1="arm_left_link_2_l" link2="arm_right_link_3_e" reason="Never" />
@@ -189,12 +203,10 @@
     <disable_collisions link1="arm_left_link_4_u" link2="arm_right_link_1_s" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="arm_right_link_2_l" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="arm_right_link_3_e" reason="Never" />
-    <disable_collisions link1="arm_left_link_4_u" link2="arm_right_link_4_u" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="aruco_marker_link" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="base_kinect" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="base_kinect2" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="cnc_miller" reason="Never" />
-    <disable_collisions link1="arm_left_link_4_u" link2="conveyor" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="feeder" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="feeder_table" reason="Never" />
     <disable_collisions link1="arm_left_link_4_u" link2="feeder_table_2" reason="Never" />
@@ -218,7 +230,6 @@
     <disable_collisions link1="arm_left_link_4_u" link2="xyz_robot" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="arm_left_link_6_b" reason="Adjacent" />
     <disable_collisions link1="arm_left_link_5_r" link2="arm_left_link_7_t" reason="Never" />
-    <disable_collisions link1="arm_left_link_5_r" link2="arm_right_link_7_t" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="aruco_marker_link" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="base_kinect" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="base_kinect2" reason="Never" />
@@ -227,6 +238,9 @@
     <disable_collisions link1="arm_left_link_5_r" link2="feeder_table" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_left_link_5_r" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="arm_left_link_5_r" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="arm_left_link_5_r" link2="finger_middle_link_2" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_left_link_5_r" link2="melfa" reason="Never" />
@@ -252,6 +266,9 @@
     <disable_collisions link1="arm_left_link_6_b" link2="feeder" reason="Never" />
     <disable_collisions link1="arm_left_link_6_b" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_left_link_6_b" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_left_link_6_b" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="arm_left_link_6_b" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_left_link_6_b" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_left_link_6_b" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_left_link_6_b" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_left_link_6_b" link2="melfa" reason="Never" />
@@ -277,6 +294,12 @@
     <disable_collisions link1="arm_left_link_7_t" link2="feeder" reason="Never" />
     <disable_collisions link1="arm_left_link_7_t" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_left_link_7_t" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_left_link_7_t" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="arm_left_link_7_t" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_left_link_7_t" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="arm_left_link_7_t" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="arm_left_link_7_t" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="arm_left_link_7_t" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_left_link_7_t" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_left_link_7_t" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_left_link_7_t" link2="melfa" reason="Never" />
@@ -322,6 +345,7 @@
     <disable_collisions link1="arm_right_link_2_l" link2="arm_right_link_3_e" reason="Adjacent" />
     <disable_collisions link1="arm_right_link_2_l" link2="arm_right_link_4_u" reason="Never" />
     <disable_collisions link1="arm_right_link_2_l" link2="arm_right_link_5_r" reason="Never" />
+    <disable_collisions link1="arm_right_link_2_l" link2="arm_right_link_6_b" reason="Never" />
     <disable_collisions link1="arm_right_link_2_l" link2="base_kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_2_l" link2="base_kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_2_l" link2="beacon" reason="Never" />
@@ -357,10 +381,23 @@
     <disable_collisions link1="arm_right_link_3_e" link2="feeder_table" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="melfa" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="mps" reason="Never" />
+    <disable_collisions link1="arm_right_link_3_e" link2="palm" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="thermo_machine" reason="Never" />
     <disable_collisions link1="arm_right_link_3_e" link2="torno_pc" reason="Never" />
@@ -376,10 +413,24 @@
     <disable_collisions link1="arm_right_link_4_u" link2="feeder_table" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="melfa" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="palm" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="arm_right_link_4_u" link2="robotiq_85_left_knuckle_link" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="thermo_machine" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="torno_pc" reason="Never" />
     <disable_collisions link1="arm_right_link_4_u" link2="xyz_robot" reason="Never" />
@@ -392,12 +443,24 @@
     <disable_collisions link1="arm_right_link_5_r" link2="feeder_table" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="melfa" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="palm" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="rail_melfa" reason="Never" />
-    <disable_collisions link1="arm_right_link_5_r" link2="robotiq_85_left_finger_tip_link" reason="Never" />
-    <disable_collisions link1="arm_right_link_5_r" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="arm_right_link_5_r" link2="robotiq_85_right_finger_tip_link" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="thermo_machine" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="torno_pc" reason="Never" />
     <disable_collisions link1="arm_right_link_5_r" link2="xyz_robot" reason="Never" />
@@ -408,27 +471,51 @@
     <disable_collisions link1="arm_right_link_6_b" link2="feeder" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="melfa" reason="Never" />
+    <disable_collisions link1="arm_right_link_6_b" link2="palm" reason="Default" />
     <disable_collisions link1="arm_right_link_6_b" link2="rail_melfa" reason="Never" />
-    <disable_collisions link1="arm_right_link_6_b" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
-    <disable_collisions link1="arm_right_link_6_b" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="thermo_machine" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="torno_pc" reason="Never" />
     <disable_collisions link1="arm_right_link_6_b" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="aruco_marker_link" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="base_kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="base_kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="cnc_miller" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="feeder" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_1_link_0" reason="Default" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_2_link_0" reason="Default" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_middle_link_0" reason="Default" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="kinect" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="kinect2" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="melfa" reason="Never" />
+    <disable_collisions link1="arm_right_link_7_t" link2="palm" reason="Adjacent" />
     <disable_collisions link1="arm_right_link_7_t" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="robotiq_85_adapter_link" reason="Never" />
-    <disable_collisions link1="arm_right_link_7_t" link2="robotiq_85_base_link" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="robotiq_85_left_finger_link" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="robotiq_85_left_finger_tip_link" reason="Never" />
     <disable_collisions link1="arm_right_link_7_t" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
@@ -445,6 +532,14 @@
     <disable_collisions link1="aruco_marker_link" link2="feeder" reason="Never" />
     <disable_collisions link1="aruco_marker_link" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="aruco_marker_link" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="aruco_marker_link" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="aruco_marker_link" link2="kinect2" reason="Never" />
     <disable_collisions link1="aruco_marker_link" link2="melfa" reason="Never" />
     <disable_collisions link1="aruco_marker_link" link2="rail_melfa" reason="Never" />
@@ -465,16 +560,29 @@
     <disable_collisions link1="base_kinect" link2="feeder_table" reason="Never" />
     <disable_collisions link1="base_kinect" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="base_kinect" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="finger_middle_link_2" reason="Never" />
     <disable_collisions link1="base_kinect" link2="kinect" reason="Adjacent" />
     <disable_collisions link1="base_kinect" link2="kinect2" reason="Never" />
     <disable_collisions link1="base_kinect" link2="melfa" reason="Never" />
     <disable_collisions link1="base_kinect" link2="mps" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="palm" reason="Never" />
     <disable_collisions link1="base_kinect" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="base_kinect" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="base_kinect" link2="robotiq_85_base_link" reason="Never" />
     <disable_collisions link1="base_kinect" link2="robotiq_85_left_finger_link" reason="Never" />
     <disable_collisions link1="base_kinect" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
     <disable_collisions link1="base_kinect" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="base_kinect" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
     <disable_collisions link1="base_kinect" link2="robotiq_85_right_knuckle_link" reason="Never" />
     <disable_collisions link1="base_kinect" link2="table" reason="Never" />
     <disable_collisions link1="base_kinect" link2="thermo_machine" reason="Never" />
@@ -491,10 +599,23 @@
     <disable_collisions link1="base_kinect2" link2="feeder_table" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="kinect" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="kinect2" reason="Adjacent" />
     <disable_collisions link1="base_kinect2" link2="melfa" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="mps" reason="Never" />
+    <disable_collisions link1="base_kinect2" link2="palm" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="base_kinect2" link2="robotiq_85_base_link" reason="Never" />
@@ -538,10 +659,23 @@
     <disable_collisions link1="cnc_miller" link2="feeder_table" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="feeder_table_3" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="kinect" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="kinect2" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="melfa" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="mps" reason="Never" />
+    <disable_collisions link1="cnc_miller" link2="palm" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="cnc_miller" link2="robotiq_85_base_link" reason="Never" />
@@ -581,10 +715,23 @@
     <disable_collisions link1="feeder" link2="feeder_table" reason="Never" />
     <disable_collisions link1="feeder" link2="feeder_table_2" reason="Never" />
     <disable_collisions link1="feeder" link2="feeder_table_3" reason="Adjacent" />
+    <disable_collisions link1="feeder" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="feeder" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="feeder" link2="kinect" reason="Never" />
     <disable_collisions link1="feeder" link2="kinect2" reason="Never" />
     <disable_collisions link1="feeder" link2="melfa" reason="Never" />
     <disable_collisions link1="feeder" link2="mps" reason="Never" />
+    <disable_collisions link1="feeder" link2="palm" reason="Never" />
     <disable_collisions link1="feeder" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="feeder" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="feeder" link2="robotiq_85_base_link" reason="Never" />
@@ -620,10 +767,23 @@
     <disable_collisions link1="feeder_table" link2="worktable" reason="Never" />
     <disable_collisions link1="feeder_table" link2="xyz_robot" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="feeder_table_3" reason="Adjacent" />
+    <disable_collisions link1="feeder_table_2" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="kinect" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="kinect2" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="melfa" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="mps" reason="Never" />
+    <disable_collisions link1="feeder_table_2" link2="palm" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="rail_melfa" reason="Adjacent" />
     <disable_collisions link1="feeder_table_2" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="robotiq_85_base_link" reason="Never" />
@@ -643,10 +803,23 @@
     <disable_collisions link1="feeder_table_2" link2="torso_link_b2" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="worktable" reason="Never" />
     <disable_collisions link1="feeder_table_2" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_1_link_0" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_1_link_1" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="finger_middle_link_3" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="kinect" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="kinect2" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="melfa" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="mps" reason="Never" />
+    <disable_collisions link1="feeder_table_3" link2="palm" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="robotiq_85_base_link" reason="Never" />
@@ -666,14 +839,251 @@
     <disable_collisions link1="feeder_table_3" link2="torso_link_b2" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="worktable" reason="Never" />
     <disable_collisions link1="feeder_table_3" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_1" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="palm" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_0" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_base_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_1_link_0" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_2" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_1_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_1_link_1" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_1_link_1" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_1_link_3" reason="Adjacent" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="palm" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_1_link_2" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_2_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_2_link_1" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_1_link_3" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_1" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_2" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="palm" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_0" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_base_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_2_link_0" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_2" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_2_link_3" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="finger_middle_link_1" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_2_link_1" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_2_link_1" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_2_link_3" reason="Adjacent" />
+    <disable_collisions link1="finger_2_link_2" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="palm" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_2_link_2" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="finger_middle_link_0" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_2_link_3" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_1" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_2" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="palm" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_0" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_middle_link_0" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_2" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_1" link2="finger_middle_link_3" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="palm" reason="Default" />
+    <disable_collisions link1="finger_middle_link_1" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_middle_link_1" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="finger_middle_link_3" reason="Adjacent" />
+    <disable_collisions link1="finger_middle_link_2" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="palm" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_base_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_middle_link_2" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="kinect" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="kinect2" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_adapter_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_base_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_left_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_left_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_left_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_right_finger_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_right_finger_tip_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_right_inner_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="robotiq_85_right_knuckle_link" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="finger_middle_link_3" link2="xyz_robot" reason="Never" />
     <disable_collisions link1="kinect" link2="kinect2" reason="Never" />
     <disable_collisions link1="kinect" link2="melfa" reason="Never" />
     <disable_collisions link1="kinect" link2="mps" reason="Never" />
+    <disable_collisions link1="kinect" link2="palm" reason="Never" />
     <disable_collisions link1="kinect" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="kinect" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="kinect" link2="robotiq_85_base_link" reason="Never" />
     <disable_collisions link1="kinect" link2="robotiq_85_left_finger_link" reason="Never" />
-    <disable_collisions link1="kinect" link2="robotiq_85_left_finger_tip_link" reason="Never" />
     <disable_collisions link1="kinect" link2="robotiq_85_left_inner_knuckle_link" reason="Never" />
     <disable_collisions link1="kinect" link2="robotiq_85_left_knuckle_link" reason="Never" />
     <disable_collisions link1="kinect" link2="robotiq_85_right_finger_link" reason="Never" />
@@ -689,6 +1099,7 @@
     <disable_collisions link1="kinect" link2="xyz_robot" reason="Never" />
     <disable_collisions link1="kinect2" link2="melfa" reason="Never" />
     <disable_collisions link1="kinect2" link2="mps" reason="Never" />
+    <disable_collisions link1="kinect2" link2="palm" reason="Never" />
     <disable_collisions link1="kinect2" link2="rail_melfa" reason="Never" />
     <disable_collisions link1="kinect2" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="kinect2" link2="robotiq_85_base_link" reason="Never" />
@@ -709,6 +1120,7 @@
     <disable_collisions link1="kinect2" link2="worktable" reason="Never" />
     <disable_collisions link1="kinect2" link2="xyz_robot" reason="Never" />
     <disable_collisions link1="melfa" link2="mps" reason="Never" />
+    <disable_collisions link1="melfa" link2="palm" reason="Never" />
     <disable_collisions link1="melfa" link2="rail_melfa" reason="Adjacent" />
     <disable_collisions link1="melfa" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="melfa" link2="robotiq_85_base_link" reason="Never" />
@@ -737,6 +1149,10 @@
     <disable_collisions link1="mps" link2="torso_link_b2" reason="Never" />
     <disable_collisions link1="mps" link2="worktable" reason="Never" />
     <disable_collisions link1="mps" link2="xyz_robot" reason="Never" />
+    <disable_collisions link1="palm" link2="rail_melfa" reason="Never" />
+    <disable_collisions link1="palm" link2="thermo_machine" reason="Never" />
+    <disable_collisions link1="palm" link2="torno_pc" reason="Never" />
+    <disable_collisions link1="palm" link2="xyz_robot" reason="Never" />
     <disable_collisions link1="rail_melfa" link2="robotiq_85_adapter_link" reason="Never" />
     <disable_collisions link1="rail_melfa" link2="robotiq_85_base_link" reason="Never" />
     <disable_collisions link1="rail_melfa" link2="robotiq_85_left_finger_link" reason="Never" />
