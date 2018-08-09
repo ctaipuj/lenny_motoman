@@ -1,12 +1,23 @@
 <launch>
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
   <arg name="load_robot_description" default="false"/>
+  
+  <arg name="simple_view" default="false"/>
 
   <!-- The name of the parameter under which the URDF is loaded -->
   <arg name="robot_description" default="robot_description"/>
 
   <!-- Load universal robot description format (URDF) -->
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find motoman_sda10f_support)/urdf/sda10f.xacro'"/>
+  
+  <!-- Load universal robot description format (URDF) -->
+  <group if="$(arg simple_view)">
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find motoman_sda10f_support)/urdf/simple_sda10f.xacro'"/>
+  </group>
+  
+  <group unless="$(arg simple_view)">
+  <param if="$(arg load_robot_description)" name="$(arg robot_description)" command="$(find xacro)/xacro --inorder '$(find motoman_sda10f_support)/urdf/sda10f.xacro'"/>
+  </group>
 
   <!-- The semantic description that corresponds to the URDF -->
   <param name="$(arg robot_description)_semantic" textfile="$(find motoman_sda10f_moveit_config)/config/motoman_sda10f.srdf" />
