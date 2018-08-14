@@ -2,7 +2,6 @@
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
      <xacro:include filename="$(find motoman_sda10f_support)/urdf/common_torso_macro.xacro" />
      <xacro:include filename="$(find motoman_sda10f_support)/urdf/arm_macro.xacro" />
-     <xacro:include filename="$(find motoman_sda10f_support)/urdf/aruco_marker_macro.xacro"/>
      <xacro:include filename="$(find robotiq_c2_model_visualization)/urdf/robotiq_c2_model_macro.xacro"/>
      <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro"/>
      <xacro:include filename="$(find motoman_sda10f_support)/urdf/kinect_macro.xacro" />
@@ -36,8 +35,6 @@
 			<child link = "${prefix}palm" />
 			<origin xyz="0 0 0" rpy="-1.5708 0 1.5708" />
 		</joint>
-		
-	  <xacro:aruco_marker prefix=""/>
         
      </xacro:macro>
                 
