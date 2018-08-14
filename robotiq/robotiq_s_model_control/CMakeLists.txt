@@ -105,7 +105,7 @@ target_link_libraries(s_model_can_node
 # See http://ros.org/doc/groovy/api/catkin/html/adv_user_guide/variables.html
 
 install(PROGRAMS nodes/SModelSimpleController.py nodes/SModelStatusListener.py 
-	nodes/SModelTcpNode.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
+	nodes/SModelTcpNode.py nodes/SModelRtuNode.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 ## Mark executables and/or libraries for installation
 install(TARGETS ${PROJECT_NAME} s_model_can_node s_model_ethercat_node
