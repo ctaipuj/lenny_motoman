@@ -27,8 +27,6 @@
 			<child link = "${prefix}robotiq_85_adapter_link" />
 			<origin xyz="0 0 0" rpy="0 1.5708 2.3562" />
 		</joint>
-		
-	  <xacro:aruco_marker prefix=""/>
         
      </xacro:macro>
                 

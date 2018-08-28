@@ -29,5 +29,7 @@
     <parent link="robotiq_85_base_link"/>
     <child link="aruco_marker_link"/>
   </joint>
+  
+  <xacro:aruco_marker prefix=""/>
  
 </robot>
