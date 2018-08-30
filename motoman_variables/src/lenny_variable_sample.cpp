@@ -1,5 +1,5 @@
 #include<ros/ros.h>
-#include "../include/motoman_variables/motoman_variables.h"
+#include "../include/motoman_variables/motoman_variables.h" // if you are using your own CMakeLists you can include <motoman_variables/motoman_variables.h>
 
 int main(int argc, char* argv[]){
 	
