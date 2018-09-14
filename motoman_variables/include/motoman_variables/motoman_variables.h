@@ -6,14 +6,14 @@
 #include <motoman_msgs/WriteSingleIO.h> 
 #include <motoman_msgs/ReadSingleIO.h>
 
-#define I1 25010
+#define I0 25010
 #define I2 25012
 #define I4 25014
 #define I6 25016
 
 /** @brief This class is used to set, reset and edit network inputs of the FS100 robot controller.
 	
-	ROS only can write/read network inputs #25xxx. This class uses the ROS services WriteSingleIO and ReadSingleIO to access and edit controller's data. To generate an external output it is necessary to edit the ladder program of the controler in order to activate the #30xxx outputs. Currently the 25010, 25012, 25014 and 25016 network inputs are connected to external outputs 30010, 30012, 30014 and 30016 respectively. This class accepts the shorcuts 0,2,4,6 too. This class allso defines the inputs as I1, I2, I3, I4; I6. You can read/write any other network input however currently they are no related to any external output.
+	ROS only can write/read network inputs #25xxx. This class uses the ROS services WriteSingleIO and ReadSingleIO to access and edit controller's data. To generate an external output it is necessary to edit the ladder program of the controler in order to activate the #30xxx outputs. Currently the 25010, 25012, 25014 and 25016 network inputs are connected to external outputs 30030, 30032, 30034 and 30036 respectively. This class accepts the shorcuts 0, 2, 4, 6 too. This class allso defines the inputs as I0, I2, I3, I4; I6. You can read/write any other network input however currently they are no related to any external output.
 	@author Barrero Lizarazo, Nicolas
 	@date September 2018
 	*/
