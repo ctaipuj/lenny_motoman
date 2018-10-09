@@ -10,10 +10,12 @@
   <arg name="robot_ip" default="10.21.7.15"/><!--Lenny's IP unless="$(arg sim)"-->
   <arg name="controller" default="fs100"/><!--Lenny's controller unless="$(arg sim)" /-->
   <arg name="right_gripper" default="false"/>
+  <arg name="simple_view" default="true"/>
  
   <!-- load the robot_description parameter before launching ROS-I nodes -->
   <include file="$(find motoman_sda10f_moveit_config)/launch/planning_context.launch" >
     <arg name="load_robot_description" value="true" />
+    <arg name="simple_view" value="$(arg simple_view)"/>
   </include>
 
   <!-- run the robot simulator and action interface nodes -->

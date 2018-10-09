@@ -11,7 +11,7 @@
         <inertia ixx="0.1"  ixy="0"  ixz="0" iyy="0.1" iyz="0" izz="0.1" />
       </inertial>
       <visual>
-        <origin xyz="-0.045 0 0.045" rpy="-1.57 0 0" />
+        <origin xyz="-0.045 0 0.045" rpy="0 0 0" />
         <geometry>
           <mesh filename="package://motoman_sda10f_support/meshes/environment/marker582_8cm.dae"/>
         </geometry>
@@ -25,7 +25,7 @@
       </collision>
     </link>
   <joint name="aruco_marker_joint" type="fixed">
-    <origin xyz="${0.144-0.045+0.045} ${-0.045+0.045} -0.00" rpy="1.57 0 0" />
+    <origin xyz="0.18 0 0" rpy="0 0 3.1416" />
     <parent link="robotiq_85_base_link"/>
     <child link="aruco_marker_link"/>
   </joint>

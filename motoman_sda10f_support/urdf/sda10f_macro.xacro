@@ -26,12 +26,12 @@
 		<xacro:robotiq_c2_model prefix=""/>
 		<xacro:s-model_articulated prefix=""/>
 		
-		<!--Grippers with robotr joints-->
+		<!--Grippers with robot joints-->
        
 		<joint name="left_gripper_to_robot" type="fixed">
 			<parent link="${prefix}arm_left_link_tool0" />
 			<child link = "${prefix}robotiq_85_adapter_link" />
-			<origin xyz="0 0 0" rpy="0 1.5708 2.3562" />
+			<origin xyz="0 0 0" rpy="0 1.5708 2.3562" /> <!--PLATINA -0.035 -->
 		</joint>
         
 		<joint name="right_gripper_to_robot" type="fixed">
@@ -48,14 +48,15 @@
 		<!--Define the position of the TCP with respect to the arm flange-->
 		<joint name="arm_right_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_right_link_tool0" />
-			<child link = "${prefix}arm_right_tcp_link" />
-			<origin xyz="0 0 -0.16" rpy="3.1416 0 0" />
-		</joint>
-
+			<child link ="${prefix}arm_right_tcp_link" />
+			<origin xyz="0 0 -0.23" rpy="3.1416 0 0" />
+		</joint>							
+		
+		<!--TCPs defined in teach pendant-->
 		<joint name="arm_left_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_left_link_tool0" />
 			<child link = "${prefix}arm_left_tcp_link" />
-			<origin xyz="0 0 -0.12" rpy="3.1416 0 0.7854" />
+			<origin xyz="0 0 -0.15" rpy="3.1416 0 0.7854" />
 		</joint>
         
 		</xacro:macro>
