@@ -17,6 +17,26 @@
 		</visual>
 </link>
 
+	<link name="arm_left_gripper_support">
+		<visual>
+			<geometry>
+				<cylinder length="0.024" radius="0.0405"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor"/>
+		</visual>
+</link>
+
+	<link name="arm_right_gripper_support">
+		<visual>
+			<geometry>
+				<cylinder length="0.01" radius="0.04"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor"/>
+		</visual>
+</link>
+
 	<link name="feeder_table">
 		<visual>
 			<geometry>
@@ -122,6 +142,18 @@
 		<child link="conveyor"/>
 		<!--origin xyz="-2.92 -2.45 0.13" rpy="0 0 -1.571" OJO 0.618 PARA LA BANDA ORIGINAL/-->
 		<origin xyz="0.572 -1.244 -0.252" rpy="0 0 -1.571"/>
+	</joint>
+	
+	<joint name="arm_left_gripper_support_to_robot" type="fixed">
+		<parent link="arm_left_link_tool0"/>
+		<child link="arm_left_gripper_support"/>
+		<origin xyz="0 0 -0.022" rpy="0 0 0"/>
+	</joint>
+	
+	<joint name="arm_right_gripper_support_to_robot" type="fixed">
+		<parent link="arm_right_link_tool0"/>
+		<child link="arm_right_gripper_support"/>
+		<origin xyz="0 0 -0.015" rpy="0 0 0"/>
 	</joint>
 	
 	<joint name="feeder_table_to_robot" type="fixed">

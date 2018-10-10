@@ -24,9 +24,20 @@
         </geometry>
       </collision>
     </link>
-  <joint name="aruco_marker_joint" type="fixed">
+    
+    <!--Left arm-->
+    
+  <!--joint name="aruco_marker_joint" type="fixed"> 
     <origin xyz="0.18 0 0" rpy="0 0 3.1416" />
     <parent link="robotiq_85_base_link"/>
+    <child link="aruco_marker_link"/>
+  </joint-->
+  
+   <!--Right arm -->
+   
+    <joint name="aruco_marker_joint" type="fixed"> 
+    <origin xyz="0 0 0.1425" rpy="0 -1.5708 -1.5708" />
+    <parent link="arm_right_tcp_link"/>
     <child link="aruco_marker_link"/>
   </joint>
   
