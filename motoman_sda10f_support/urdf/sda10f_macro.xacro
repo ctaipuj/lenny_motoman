@@ -7,6 +7,7 @@
 	<xacro:include filename="$(find motoman_sda10f_support)/urdf/kinect_macro.xacro" />
 	<xacro:include filename="$(find motoman_sda10f_support)/urdf/environment_macro.xacro"/>
 	<xacro:include filename="$(find motoman_sda10f_support)/urdf/visual_environment_macro.xacro"/>
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/real_sense_macro.xacro"/>
 	
 		<xacro:macro name="motoman_sda10f" params="prefix">	
         

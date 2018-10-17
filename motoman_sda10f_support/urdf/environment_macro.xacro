@@ -177,7 +177,7 @@
 	<joint name="worktable_to_robot" type="fixed">
 		<parent link="table"/>
 		<child link="worktable"/>
-		<origin xyz="0 1.28 -0.76" rpy="0 0 0"/> <!--Accurate 1.274 aprox 1.28-->
+		<origin xyz="0 1.28 -0.76" rpy="0 0 0"/>
 	</joint>
 	
 	<joint name="beacon_to_robot" type="fixed">

@@ -6,7 +6,8 @@
      <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro"/>
      <xacro:include filename="$(find motoman_sda10f_support)/urdf/kinect_macro.xacro" />
 	<xacro:include filename="$(find motoman_sda10f_support)/urdf/environment_macro.xacro"/>
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/aruco_marker_macro.xacro"/>
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/real_sense_macro.xacro"/>
+	<!--xacro:include filename="$(find motoman_sda10f_support)/urdf/aruco_marker_macro.xacro"/-->
 	
      <xacro:macro name="motoman_sda10f" params="prefix">	
         
