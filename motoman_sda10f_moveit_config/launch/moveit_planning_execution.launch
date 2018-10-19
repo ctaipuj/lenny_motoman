@@ -9,7 +9,7 @@
   <arg name="sim" default="false" />
   <arg name="robot_ip" default="10.21.7.15"/><!--Lenny's IP unless="$(arg sim)"-->
   <arg name="controller" default="fs100"/><!--Lenny's controller unless="$(arg sim)" /-->
-  <arg name="right_gripper" default="false"/>
+  <arg name="right_gripper" default="false"/><!--Opens communication with right arm gripper TODO set to true when USB connected-->
   <arg name="simple_view" default="true"/>
  
   <!-- load the robot_description parameter before launching ROS-I nodes -->

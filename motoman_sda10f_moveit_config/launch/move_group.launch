@@ -1,6 +1,6 @@
 <launch>
 
-  <include file="$(find motoman_sda10f_moveit_config)/launch/planning_context.launch" />
+  <!--include file="$(find motoman_sda10f_moveit_config)/launch/planning_context.launch" /Double call to planning context?? in demo.launch and here?-->
 
   <!-- GDB Debug Option -->
   <arg name="debug" default="false" />

@@ -2,7 +2,10 @@ moveit_setup_assistant_config:
   URDF:
     package: motoman_sda10f_support
     relative_path: urdf/sda10f.xacro
+    xacro_args: ""
   SRDF:
     relative_path: config/motoman_sda10f.srdf
   CONFIG:
-    generated_timestamp: 1409751299
+    author_name: Nicolas Barrero L
+    author_email: n.barrero@javeriana.edu.co
+    generated_timestamp: 1539972699
