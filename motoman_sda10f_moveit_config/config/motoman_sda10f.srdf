@@ -103,6 +103,24 @@
         <joint name="arm_right_joint_6_b" value="0" />
         <joint name="arm_right_joint_7_t" value="0" />
     </group_state>
+    <group_state name="RIGHT_ARM_PICK_WAIT" group="arm_right">
+        <joint name="arm_right_joint_1_s" value="-1.479" />
+        <joint name="arm_right_joint_2_l" value="0.9604" />
+        <joint name="arm_right_joint_3_e" value="1.4588" />
+        <joint name="arm_right_joint_4_u" value="-1.0892" />
+        <joint name="arm_right_joint_5_r" value="-0.6191" />
+        <joint name="arm_right_joint_6_b" value="-1.5659" />
+        <joint name="arm_right_joint_7_t" value="-0.1032" />
+    </group_state>
+    <group_state name="LEFT_ARM_PICK_WAIT" group="arm_left">
+        <joint name="arm_left_joint_1_s" value="-1.307" />
+        <joint name="arm_left_joint_2_l" value="0.9396" />
+        <joint name="arm_left_joint_3_e" value="1.3291" />
+        <joint name="arm_left_joint_4_u" value="-1.4004" />
+        <joint name="arm_left_joint_5_r" value="-0.5847" />
+        <joint name="arm_left_joint_6_b" value="-1.211" />
+        <joint name="arm_left_joint_7_t" value="0" />
+    </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="left_ee" parent_link="arm_left_link_7_t" group="gripper_2f" parent_group="arm_left" />
     <end_effector name="right_ee" parent_link="arm_right_link_7_t" group="gripper_3f" parent_group="arm_right" />
