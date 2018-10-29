@@ -106,7 +106,7 @@
 		</visual>
 </link-->
 
-	<link name="mps">
+	<!--link name="mps">
 		<visual>
 			<geometry>
 				<mesh filename="package://motoman_sda10f_support/meshes/environment/MPS.STL"/>
@@ -122,9 +122,9 @@
 				</geometry>
 				<origin xyz= "-0.7 0 -1.40"/>
 		</collision>
-</link>
+</link-->
 
-	<!--link name="MPS_FAKE">
+	<link name="MPS_FAKE">
 		<visual>
 			<geometry>
 				<mesh filename="package://motoman_sda10f_support/meshes/environment/MPS_FAKE.stl" scale="0.008 0.008 0.008"/>
@@ -134,7 +134,7 @@
 				<color rgba="${168/255} ${224/255} ${198/255} 1"/>
 			</material>
 		</visual>
-</link-->
+</link>
 
 		<!-- joint list -->
 	<joint name="coveyor_to_robot" type="fixed">
@@ -192,17 +192,17 @@
 		<origin xyz="-0.53 -0.54 -0.3" rpy="1.571 0 1.571"/>
 	</joint-->
 	
-		<joint name="mps_to_robot" type="fixed">
+		<!--joint name="mps_to_robot" type="fixed">
 		<parent link="torso_base_link"/>
 		<child link="mps"/>
-		<origin xyz="-0.111 -1.405 -0.3" rpy="1.571 0 1.571"/> <!--Sumo 5cm a las MPS por si acaso-->
-	</joint>
+		<origin xyz="-0.111 -1.405 -0.3" rpy="1.571 0 1.571"/--> <!--Sumo 5cm a las MPS por si acaso-->
+	<!--/joint-->
 	
-		<!--joint name="MPS_FAKE_to_robot" type="fixed">
+		<joint name="MPS_FAKE_to_robot" type="fixed">
 		<parent link="torso_base_link"/>
 		<child link="MPS_FAKE"/>
-		<origin xyz="-1.35 0.6 -0.3" rpy="0 0 -1.5708"/--> <!--Sumo 5cm a las MPS por si acaso-->
-	<!--/joint-->
+		<origin xyz="-1.35 0.6 -0.3" rpy="0 0 -1.5708"/> <!--Sumo 5cm a las MPS por si acaso-->
+	</joint>
 	
 		<!-- end of joint list -->
 	

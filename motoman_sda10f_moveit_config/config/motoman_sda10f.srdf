@@ -103,14 +103,32 @@
         <joint name="arm_right_joint_6_b" value="0" />
         <joint name="arm_right_joint_7_t" value="0" />
     </group_state>
+    <group_state name="RIGHT_ARM_OVERHEAD_WAIT" group="arm_right">
+    	<joint name="arm_right_joint_1_s" value="-1.6173442602157593" />
+        <joint name="arm_right_joint_2_l" value="0.8364968299865723" />
+        <joint name="arm_right_joint_3_e" value="0.2758735120296478" />
+        <joint name="arm_right_joint_4_u" value="-1.0578240156173706" />
+        <joint name="arm_right_joint_5_r" value="0.6378929615020752" />
+        <joint name="arm_right_joint_6_b" value="-0.04662694036960602" />
+        <joint name="arm_right_joint_7_t" value="-0.08596308529376984" />
+    </group_state>
     <group_state name="RIGHT_ARM_PICK_WAIT" group="arm_right">
-        <joint name="arm_right_joint_1_s" value="-1.479" />
-        <joint name="arm_right_joint_2_l" value="0.9604" />
-        <joint name="arm_right_joint_3_e" value="1.4588" />
-        <joint name="arm_right_joint_4_u" value="-1.0892" />
-        <joint name="arm_right_joint_5_r" value="-0.6191" />
-        <joint name="arm_right_joint_6_b" value="-1.5659" />
-        <joint name="arm_right_joint_7_t" value="-0.1032" />
+        <joint name="arm_right_joint_1_s" value="-1.6036747694015503" />
+        <joint name="arm_right_joint_2_l" value="0.8278383612632751" />
+        <joint name="arm_right_joint_3_e" value="0.2714993953704834" />
+        <joint name="arm_right_joint_4_u" value="-1.4349554777145386" />
+        <joint name="arm_right_joint_5_r" value="-0.7851247787475586" />
+        <joint name="arm_right_joint_6_b" value="-1.9149243831634521" />
+        <joint name="arm_right_joint_7_t" value="-0.08157169073820114" />
+    </group_state>
+    <group_state name="RIGHT_ARM_PLACE_WAIT" group="arm_right"> 
+        <joint name="arm_right_joint_1_s" value="-2.1129562854766846" />
+        <joint name="arm_right_joint_2_l" value="0.8278383612632751" />
+        <joint name="arm_right_joint_3_e" value="0.27146902680397034" />
+        <joint name="arm_right_joint_4_u" value="-1.435001015663147" />
+        <joint name="arm_right_joint_5_r" value="1.0364545583724976" />
+        <joint name="arm_right_joint_6_b" value="-1.9153192043304443" />
+        <joint name="arm_right_joint_7_t" value="-0.08157169073820114" />
     </group_state>
     <group_state name="LEFT_ARM_PICK_WAIT" group="arm_left">
         <joint name="arm_left_joint_1_s" value="-1.307" />
