@@ -18,6 +18,11 @@ This Package contains the main MoveIt! configuration for Lenny.
 This Package contains the support elements required when using Lenny.
 6. [motoman_variables]() package. It was developed at CTAI. It facilitates the communication whit network variables using the **"ReadSingleIO.srv"** and the **"WriteSingleIO.srv"** services.
 
+## Requirements
+
+* [MoveIt!](https://moveit.ros.org)
+* [Industrial core](http://wiki.ros.org/industrial_core)
+
 ## Video
 
 * Current research:  
