@@ -76,6 +76,16 @@ When the **robot_enable** service is called the robot will start to receive ROS 
 
 The servos should power up. You will hear servos noice.
 
+## Video
+
+SDA10F robot used with MoveIt! framework.
+
+[![video](https://img.youtube.com/vi/mS05tVPRCq0/0.jpg)](https://www.youtube.com/watch?v=mS05tVPRCq0)
+
+## Publications
+
+The particular setup of the SDA10F robot is described in [*"Setup of the Yaskawa SDA10F Robot for Industrial Applications, Using ROS-Industrial"*](https://www.researchgate.net/publication/315063645_Setup_of_the_Yaskawa_SDA10F_Robot_for_Industrial_Applications_Using_ROS-Industrial).
+
 ## NOTE
 
 * The **demo.launch, move\_group.launch, moveit\_planning\_execution.launch, planning\_context.launch, trajectory_execution.launch.xml** files were hand-edited please check changes within each file.
