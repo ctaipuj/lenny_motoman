@@ -21,7 +21,7 @@ URDF files describing the robot and environment.
 
 **CAUTION**
 
-Before using the SDA10F robot with ROS make sure the **../motoman\_sda10f\_support/config/sda10f\_motion\_interface.yaml** yaml file ennumerates the groups from *0 to 3*. Otherwise the robot won't work properly with ROS.
+Before using the SDA10F robot with ROS make sure the **../motoman\_sda10f\_support/config/sda10f\_motion\_interface.yaml** yaml file enumerates the groups from *0 to 3*. Otherwise the robot won't work properly with ROS.
 
 ```yaml
 topic_list:
@@ -52,7 +52,7 @@ The meshes are organized in four folders.
 3. robotiq_c2: Gripper's geometries.
 4. sda10f: Lenny's Visual and collision geometries.
 
- You can edit the URDF files to add new elements to the environmnet.
+ You can edit the URDF files to add new elements to the environment.
 
 ## NOTE
 
