@@ -12,11 +12,71 @@ Launch files.
 
 ## Usage
 
+### Editing Files:
 It is not recommended to edit these files by hand. Instead the setup assistant should be used.
 
 In a new terminal run:
 
 `roslaunch motoman_sda10f_moveit_config setup_assistant.launch` 
+
+Follow the instructions in screen.
+
+### Demo test using MoveIt!:
+
+`roslaunch motoman_sda10f_moveit_config demo.launch`
+
+You can start using Rviz graphic interface.
+
+### Using Lenny with MoveIt!:
+
+Make sure the robot is propertly connected to the network (execute a ping test)
+
+**When working in a distributed system three ROS variables must be configured first:**
+
+```
+cd
+gedit .bashrc
+```
+Go to the bottom line of the file and add these three lines 
+
+``` sh
+export ROS_IP=localmachine_ip #TODO
+export ROS_HOSTNAME= mastermachine_ip #TODO
+export ROS_MASTER_URI= mastermachine_ip:11311
+```
+
+Save the file and close all terminals.
+
+**To bring up Lenny execute:**
+
+`roslaunch motoman_sda10f_moveit_config moveit_planning_execution.launch`
+
+You can start using Rviz graphic interface.
+
+Default parameters:
+
+```xml
+robot_ip=10.21.7.15
+controller=fs100
+simple_view=true
+right_gripper=false
+```
+
+To allow ROS to command the robot you must call first the **robot_enable** service.
+
+**WARNING**
+
+When the **robot_enable** service is called the robot will start to receive ROS commands and it could move. **Make sure the area is clear and the teach pendant is reachable.** If not sure about the robot state or unexpected behavior occurs press the emergency stop button.
+
+* Check the teach pendant key. It must be in remote mode position.
+*  Check the emergency stop button, it must be released.
+*  In a terminal execute:
+
+`rosservice call robot_enable`
+
+The servos should power up. You will hear servos noice.
+
+
 
 ## NOTE
 
