@@ -18,6 +18,13 @@ This Package contains the main MoveIt! configuration for Lenny.
 This Package contains the support elements required when using Lenny.
 6. [motoman_variables]() package. It was developed at CTAI. It facilitates the communication whit network variables using the **"ReadSingleIO.srv"** and the **"WriteSingleIO.srv"** services.
 
+## Video
+
+* Current research:  
+SDA10F robot used with MoveIt! framework for a waste classification task. 
+
+[![video](https://img.youtube.com/vi/F76Pe-WkP3g/0.jpg)](https://youtu.be/F76Pe-WkP3g)
+
 ## NOTE
 
 * Please follow the links for further information about each package.
