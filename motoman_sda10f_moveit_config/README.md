@@ -42,7 +42,7 @@ Go to the bottom line of the file and add these three lines
 ``` sh
 export ROS_IP=localmachine_ip #TODO
 export ROS_HOSTNAME= mastermachine_ip #TODO
-export ROS_MASTER_URI= mastermachine_ip:11311
+export ROS_MASTER_URI= mastermachine_ip:11311 #TODO
 ```
 
 Save the file and close all terminals.
