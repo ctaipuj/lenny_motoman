@@ -76,13 +76,14 @@ When the **robot_enable** service is called the robot will start to receive ROS 
 
 The servos should power up. You will hear servos noice.
 
-
-
 ## NOTE
 
 * The **demo.launch, move\_group.launch, moveit\_planning\_execution.launch, planning\_context.launch, trajectory_execution.launch.xml** files were hand-edited please check changes within each file.
 *  Since Lenny works with two collision matrixes two srdf files were created. One for the simple view environment and the other one for the full environment.
 
+***
+![imagen](https://bit.ly/2stdrwY) Keep up with CTAI new developments! Watch our [YouTube Channel](https://www.youtube.com/channel/UC06RetpipAkfxl98UfEc21w). 
+Don't forget to subcribe!
 ***
 *Created by Nicolas Barrero Jan 2019*    
 **"Centro Tecnologico de Automatizacion Industrial" CTAI  
