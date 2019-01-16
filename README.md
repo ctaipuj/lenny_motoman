@@ -23,6 +23,10 @@ This Package contains the support elements required when using Lenny.
 * Please follow the links for further information about each package.
 
 ***
+![imagen](https://bit.ly/2QOK5D6)  
+Keep up with CTAI new developments! Watch our [YouTube Channel](https://www.youtube.com/channel/UC06RetpipAkfxl98UfEc21w). 
+Don't forget to subcribe!
+***
 *Created by Nicolas Barrero May 2018*  
 *Modified by Nicolas Barrero Oct 2018*  
 *Modified by Nicolas Barrero Jan 2019*  
