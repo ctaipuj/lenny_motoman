@@ -6,9 +6,11 @@ Panels:
       Expanded:
         - /Global Options1
         - /MotionPlanning1
+        - /MotionPlanning1/Planning Request1
+        - /MotionPlanning1/Planned Path1
         - /TF1/Frames1
       Splitter Ratio: 0.742560029
-    Tree Height: 332
+    Tree Height: 153
   - Class: rviz/Help
     Name: Help
   - Class: rviz/Views
@@ -67,6 +69,11 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          MPS_FAKE:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           arm_left_gripper_support:
             Alpha: 1
             Show Axes: false
@@ -300,11 +307,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          mps:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           palm:
             Alpha: 1
             Show Axes: false
@@ -388,7 +390,7 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-        Loop Animation: true
+        Loop Animation: false
         Robot Alpha: 0.5
         Robot Color: 150; 50; 150
         Show Robot Collision: false
@@ -410,7 +412,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: arm_left
+        Planning Group: arm_right
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -433,6 +435,11 @@ Visualization Manager:
           Expand Link Details: false
           Expand Tree: false
           Link Tree Style: Links in Alphabetic Order
+          MPS_FAKE:
+            Alpha: 1
+            Show Axes: false
+            Show Trail: false
+            Value: true
           arm_left_gripper_support:
             Alpha: 1
             Show Axes: false
@@ -666,11 +673,6 @@ Visualization Manager:
             Show Axes: false
             Show Trail: false
             Value: true
-          mps:
-            Alpha: 1
-            Show Axes: false
-            Show Trail: false
-            Value: true
           palm:
             Alpha: 1
             Show Axes: false
@@ -756,154 +758,150 @@ Visualization Manager:
             Value: true
         Robot Alpha: 0.5
         Show Robot Collision: false
-        Show Robot Visual: true
+        Show Robot Visual: false
       Value: true
     - Class: rviz/TF
       Enabled: true
       Frame Timeout: 15
       Frames:
-        All Enabled: true
+        All Enabled: false
+        MPS_FAKE:
+          Value: false
         arm_left_gripper_support:
-          Value: true
+          Value: false
         arm_left_link_1_s:
-          Value: true
+          Value: false
         arm_left_link_2_l:
-          Value: true
+          Value: false
         arm_left_link_3_e:
-          Value: true
+          Value: false
         arm_left_link_4_u:
-          Value: true
+          Value: false
         arm_left_link_5_r:
-          Value: true
+          Value: false
         arm_left_link_6_b:
-          Value: true
+          Value: false
         arm_left_link_7_t:
-          Value: true
+          Value: false
         arm_left_link_tool0:
-          Value: true
+          Value: false
         arm_left_tcp_link:
-          Value: true
+          Value: false
         arm_right_gripper_support:
-          Value: true
+          Value: false
         arm_right_link_1_s:
-          Value: true
+          Value: false
         arm_right_link_2_l:
-          Value: true
+          Value: false
         arm_right_link_3_e:
-          Value: true
+          Value: false
         arm_right_link_4_u:
-          Value: true
+          Value: false
         arm_right_link_5_r:
-          Value: true
+          Value: false
         arm_right_link_6_b:
-          Value: true
+          Value: false
         arm_right_link_7_t:
-          Value: true
+          Value: false
         arm_right_link_tool0:
-          Value: true
+          Value: false
         arm_right_tcp_link:
           Value: true
         base_kinect:
-          Value: true
+          Value: false
         base_kinect2:
-          Value: true
+          Value: false
         beacon:
-          Value: true
+          Value: false
         camera_depth_frame:
-          Value: true
+          Value: false
         camera_depth_optical_frame:
-          Value: true
+          Value: false
         camera_fisheye_frame:
-          Value: true
+          Value: false
         camera_fisheye_optical_frame:
-          Value: true
+          Value: false
         camera_left_ir_frame:
-          Value: true
+          Value: false
         camera_left_ir_optical_frame:
-          Value: true
+          Value: false
         camera_link:
-          Value: true
+          Value: false
         camera_right_ir_frame:
-          Value: true
+          Value: false
         camera_right_ir_optical_frame:
-          Value: true
+          Value: false
         conveyor:
-          Value: true
+          Value: false
         feeder_table:
-          Value: true
+          Value: false
         feeder_table_2:
-          Value: true
+          Value: false
         finger_1_link_0:
-          Value: true
+          Value: false
         finger_1_link_1:
-          Value: true
+          Value: false
         finger_1_link_2:
-          Value: true
+          Value: false
         finger_1_link_3:
-          Value: true
+          Value: false
         finger_2_link_0:
-          Value: true
+          Value: false
         finger_2_link_1:
-          Value: true
+          Value: false
         finger_2_link_2:
-          Value: true
+          Value: false
         finger_2_link_3:
-          Value: true
+          Value: false
         finger_middle_link_0:
-          Value: true
+          Value: false
         finger_middle_link_1:
-          Value: true
+          Value: false
         finger_middle_link_2:
-          Value: true
+          Value: false
         finger_middle_link_3:
-          Value: true
+          Value: false
         kinect:
-          Value: true
+          Value: false
         kinect2:
-          Value: true
-        mps:
+          Value: false
+        object_link:
           Value: true
         palm:
-          Value: true
+          Value: false
         real_sense_base_camera_link:
-          Value: true
+          Value: false
         robotiq_85_base_link:
-          Value: true
+          Value: false
         robotiq_85_left_finger_link:
-          Value: true
-        robotiq_85_left_finger_tip_link:
-          Value: true
-        robotiq_85_left_inner_knuckle_link:
-          Value: true
+          Value: false
         robotiq_85_left_knuckle_link:
-          Value: true
+          Value: false
         robotiq_85_right_finger_link:
-          Value: true
-        robotiq_85_right_finger_tip_link:
-          Value: true
-        robotiq_85_right_inner_knuckle_link:
-          Value: true
+          Value: false
         robotiq_85_right_knuckle_link:
-          Value: true
+          Value: false
         table:
-          Value: true
+          Value: false
         tool0:
-          Value: true
+          Value: false
         torso_base_link:
-          Value: true
+          Value: false
         torso_link_b1:
-          Value: true
+          Value: false
         torso_link_b2:
-          Value: true
+          Value: false
         worktable:
-          Value: true
+          Value: false
       Marker Scale: 1
       Name: TF
       Show Arrows: true
       Show Axes: true
-      Show Names: true
+      Show Names: false
       Tree:
         torso_base_link:
+          MPS_FAKE:
+            {}
           base_kinect:
             kinect:
               {}
@@ -928,7 +926,7 @@ Visualization Manager:
           feeder_table:
             feeder_table_2:
               {}
-          mps:
+          object_link:
             {}
           table:
             worktable:
@@ -947,18 +945,7 @@ Visualization Manager:
                             arm_left_tcp_link:
                               {}
                             robotiq_85_base_link:
-                              robotiq_85_left_inner_knuckle_link:
-                                robotiq_85_left_finger_tip_link:
-                                  {}
-                              robotiq_85_left_knuckle_link:
-                                robotiq_85_left_finger_link:
-                                  {}
-                              robotiq_85_right_inner_knuckle_link:
-                                robotiq_85_right_finger_tip_link:
-                                  {}
-                              robotiq_85_right_knuckle_link:
-                                robotiq_85_right_finger_link:
-                                  {}
+                              {}
             arm_right_link_1_s:
               arm_right_link_2_l:
                 arm_right_link_3_e:
@@ -1026,15 +1013,15 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.129796997
+      Pitch: 0.299796969
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 5.17495012
+      Yaw: 5.66494894
     Saved: ~
 Window Geometry:
   Displays:
     collapsed: false
-  Height: 1028
+  Height: 776
   Help:
     collapsed: false
   Hide Left Dock: false
@@ -1043,9 +1030,9 @@ Window Geometry:
     collapsed: false
   MotionPlanning - Trajectory Slider:
     collapsed: false
-  QMainWindow State: 000000ff00000000fd0000000100000000000002b8000003befc0200000008fb000000100044006900730070006c0061007900730100000028000001e1000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000020f000001d70000018300fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00ffffff00000466000003be00000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  QMainWindow State: 000000ff00000000fd0000000100000000000002b8000002c2fc0200000008fb000000100044006900730070006c00610079007301000000280000012e000000d700fffffffb0000000800480065006c00700000000342000000bb0000007300fffffffb0000000a0056006900650077007300000003b0000000b0000000ad00fffffffb0000000c00430061006d00650072006100000002ff000001610000000000000000fb0000001e004d006f00740069006f006e00200050006c0061006e006e0069006e00670100000374000001890000000000000000fb0000002e004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d00200053006c00690064006500720000000000ffffffff0000000000000000fb0000001c004d006f00740069006f006e0050006c0061006e006e0069006e0067010000015c0000018e0000018300fffffffb00000044004d006f00740069006f006e0050006c0061006e006e0069006e00670020002d0020005400720061006a006500630074006f0072007900200053006c00690064006500720000000000ffffffff0000004a00ffffff00000201000002c200000001000000020000000100000002fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
   Views:
     collapsed: false
-  Width: 1828
-  X: 1419
+  Width: 1215
+  X: 65
   Y: 24
