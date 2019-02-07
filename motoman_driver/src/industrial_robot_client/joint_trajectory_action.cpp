@@ -276,10 +276,22 @@ void JointTrajectoryAction::goalCB(JointTractoryActionServer::GoalHandle gh)
       // Generating message for groups that were not present in the trajectory message
       else
       {
-        std::vector<double> positions(num_joints, 0.0);
+        
+        //CAROL: CHANGED BY PR 259
+        /*std::vector<double> positions(num_joints, 0.0);
+        std::vector<double> velocities(num_joints, 0.0);
+        std::vector<double> accelerations(num_joints, 0.0);
+        std::vector<double> effort(num_joints, 0.0); */
+        
+        //By using the last_trajectory_state_map_[group_number]->actual.positions, we are (as far as I understand how Motoman driver works) taking the most 
+        //recent group joint values received from the YASKAWA robot controller as goal for the current motion trajectory, meaning that the joints that MoveIt 
+        //did not plan for, will maintain its current position.
+        ROS_DEBUG("Group %s not present in trajectory plan, using its last received joint positions as goal", robot_groups_[group_number].get_name().c_str());
+        std::vector<double> positions = last_trajectory_state_map_[group_number]->actual.positions;
         std::vector<double> velocities(num_joints, 0.0);
         std::vector<double> accelerations(num_joints, 0.0);
         std::vector<double> effort(num_joints, 0.0);
+        
 
         dyn_group.positions = positions;
         dyn_group.velocities = velocities;

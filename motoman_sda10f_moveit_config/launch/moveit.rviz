@@ -412,7 +412,7 @@ Visualization Manager:
         Goal State Color: 250; 128; 0
         Interactive Marker Size: 0
         Joint Violation Color: 255; 0; 255
-        Planning Group: arm_right
+        Planning Group: sda10f
         Query Goal State: true
         Query Start State: false
         Show Workspace: false
@@ -837,36 +837,12 @@ Visualization Manager:
           Value: false
         feeder_table_2:
           Value: false
-        finger_1_link_0:
-          Value: false
-        finger_1_link_1:
-          Value: false
-        finger_1_link_2:
-          Value: false
-        finger_1_link_3:
-          Value: false
-        finger_2_link_0:
-          Value: false
-        finger_2_link_1:
-          Value: false
-        finger_2_link_2:
-          Value: false
-        finger_2_link_3:
-          Value: false
         finger_middle_link_0:
-          Value: false
-        finger_middle_link_1:
-          Value: false
-        finger_middle_link_2:
-          Value: false
-        finger_middle_link_3:
           Value: false
         kinect:
           Value: false
         kinect2:
           Value: false
-        object_link:
-          Value: true
         palm:
           Value: false
         real_sense_base_camera_link:
@@ -926,8 +902,6 @@ Visualization Manager:
           feeder_table:
             feeder_table_2:
               {}
-          object_link:
-            {}
           table:
             worktable:
               {}
@@ -959,21 +933,8 @@ Visualization Manager:
                             arm_right_tcp_link:
                               {}
                             palm:
-                              finger_1_link_0:
-                                finger_1_link_1:
-                                  finger_1_link_2:
-                                    finger_1_link_3:
-                                      {}
-                              finger_2_link_0:
-                                finger_2_link_1:
-                                  finger_2_link_2:
-                                    finger_2_link_3:
-                                      {}
                               finger_middle_link_0:
-                                finger_middle_link_1:
-                                  finger_middle_link_2:
-                                    finger_middle_link_3:
-                                      {}
+                                {}
                               tool0:
                                 {}
             beacon:
@@ -998,7 +959,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/XYOrbit
-      Distance: 4.98318672
+      Distance: 7.28539419
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -1013,10 +974,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.299796969
+      Pitch: 0.319797546
       Target Frame: base_link
       Value: XYOrbit (rviz)
-      Yaw: 5.66494894
+      Yaw: 5.56496668
     Saved: ~
 Window Geometry:
   Displays:
