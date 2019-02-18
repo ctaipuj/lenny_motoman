@@ -40,7 +40,7 @@ For further information about the usage you can see the [documentation.pdf](http
 Keep up with CTAI new developments! Watch our [YouTube Channel](https://www.youtube.com/channel/UC06RetpipAkfxl98UfEc21w). 
 Don't forget to subscribe!
 ***
-*Created by Nicolas Barrero Jan 2019*    
+*Created by Nicolas Barrero Feb 2019*    
 **"Centro Tecnologico de Automatizacion Industrial" CTAI  
 Perception For Industrial Robots Project**
 
