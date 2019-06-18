@@ -26,7 +26,7 @@ This Package contains the support elements required when using Lenny.
 ## Video
 
 * Current research:  
-SDA10F robot used with MoveIt! framework for a waste classification task. 
+SDA10F robot used with MoveIt! framework for plastic bottle classification tasks. 
 
 [![video](https://img.youtube.com/vi/F76Pe-WkP3g/0.jpg)](https://youtu.be/F76Pe-WkP3g)
 
