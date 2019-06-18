@@ -1,7 +1,11 @@
 <?xml version="1.0" ?>
 <model xmlns:xacro="http://ros.org/wiki/xacro">
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/zed_macro.xacro"/><!-- ZED camera -->
 	<xacro:macro name="environment" params="name prefix">
-	
+	<xacro:zed_camera prefix=""/>
+
+
+
 		<!-- link list -->
 	<link name="conveyor">
 		<visual>
@@ -17,15 +21,6 @@
 		</visual>
 </link>
 
-	<link name="arm_left_gripper_support">
-		<visual>
-			<geometry>
-				<cylinder length="0.024" radius="0.0405"/>
-			</geometry>
-			<origin xyz="0 0 0"/>
-			<material name="gray_conveyor"/>
-		</visual>
-</link>
 
 	<link name="arm_right_gripper_support">
 		<visual>
@@ -57,7 +52,7 @@
 		</visual>
 </link>
 
-	<link name="table">
+	<!--link name="table">
 		<visual>
 			<geometry>
 				<mesh filename="package://motoman_sda10f_support/meshes/environment/table.STL"/>
@@ -68,9 +63,9 @@
 				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/beige.png"/>
 			</material>
 		</visual>
-</link>
+</link-->
 
-	<link name="worktable">
+	<!--link name="worktable">
 		<visual>
 			<geometry>
 				<mesh filename="package://motoman_sda10f_support/meshes/environment/worktable.STL" scale="0.001 0.001 0.001"/>
@@ -80,7 +75,21 @@
 				<color rgba="${45/255} ${135/255} ${149/255} 1"/>
 			</material>
 		</visual>
+</link-->
+
+	<link name="worktable">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/table_new.stl" scale="0.001 0.001 0.001"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor">
+				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/red.png"/>
+			</material>
+		</visual>
+
 </link>
+
 
 	<link name="beacon">
 		<visual>
@@ -124,7 +133,7 @@
 		</collision>
 </link-->
 
-	<link name="MPS_FAKE">
+	<!--link name="MPS_FAKE">
 		<visual>
 			<geometry>
 				<mesh filename="package://motoman_sda10f_support/meshes/environment/MPS_FAKE.stl" scale="0.008 0.008 0.008"/>
@@ -134,7 +143,23 @@
 				<color rgba="${168/255} ${224/255} ${198/255} 1"/>
 			</material>
 		</visual>
+</link-->
+
+	<link name="tool_table">
+		<visual>
+			<geometry>
+				<mesh filename="package://motoman_sda10f_support/meshes/environment/tool_table.STL"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor">
+				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/red.png"/>
+			</material>
+		</visual>
+
 </link>
+
+
+
 
 		<!-- joint list -->
 	<joint name="coveyor_to_robot" type="fixed">
@@ -144,11 +169,6 @@
 		<origin xyz="0.572 -1.244 -0.252" rpy="0 0 -1.571"/>
 	</joint>
 	
-	<joint name="arm_left_gripper_support_to_robot" type="fixed">
-		<parent link="arm_left_link_tool0"/>
-		<child link="arm_left_gripper_support"/>
-		<origin xyz="0 0 -0.022" rpy="0 0 0"/>
-	</joint>
 	
 	<joint name="arm_right_gripper_support_to_robot" type="fixed">
 		<parent link="arm_right_link_tool0"/>
@@ -168,17 +188,24 @@
 		<origin xyz="1.11 0 0" rpy="0 0 0"/>
 	</joint>
 	
-	<joint name="table_to_robot" type="fixed">
+	<!--joint name="table_to_robot" type="fixed">
 		<parent link="torso_base_link"/>
 		<child link="table"/>
-		<origin xyz="0.7 0 -0.34" rpy="1.571 0 -1.571"/> <!--MODIFIED BY NICOLAS TODO-->
-	</joint>
+		<origin xyz="0.7 0 -0.34" rpy="1.571 0 -1.571"/> 
+	</joint-->
 	
-	<joint name="worktable_to_robot" type="fixed">
+	<!--joint name="worktable_to_robot" type="fixed">
 		<parent link="table"/>
 		<child link="worktable"/>
 		<origin xyz="0 1.28 -0.76" rpy="0 0 0"/>
-	</joint>
+	</joint-->
+
+	<joint name="worktable_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="worktable"/>
+		<origin xyz="0.52 0 0.29" rpy="0 0  1.57"/>
+	</joint>	
+
 	
 	<joint name="beacon_to_robot" type="fixed">
 		<parent link="torso_link_b1"/>
@@ -198,14 +225,31 @@
 		<origin xyz="-0.111 -1.405 -0.3" rpy="1.571 0 1.571"/--> <!--Sumo 5cm a las MPS por si acaso-->
 	<!--/joint-->
 	
-		<joint name="MPS_FAKE_to_robot" type="fixed">
+	<!--joint name="MPS_FAKE_to_robot" type="fixed">
 		<parent link="torso_base_link"/>
 		<child link="MPS_FAKE"/>
-		<origin xyz="-1.35 0.6 -0.3" rpy="0 0 -1.5708"/> <!--Sumo 5cm a las MPS por si acaso-->
+		<origin xyz="-1.35 0.6 -0.3" rpy="0 0 -1.5708"/> <!Sumo 5cm a las MPS por si acaso-->
+	<!--/joint-->
+
+	<!-- Camera zed -->
+
+	<joint name="zed_camera" type="fixed">
+		<parent link="torso_base_link" />
+		<child link = "zed_camera_center" />
+		<origin xyz="0.8 0.05 2.05" rpy="0 1.57 0" />
+	</joint>
+
+
+	<joint name="tooltable_to_robot" type="fixed">
+		<parent link="conveyor"/>
+		<child link="tool_table"/>
+		<origin xyz="-1.8 -1.33 0.68" rpy="1.57 0 3.14"/>
 	</joint>
 	
 		<!-- end of joint list -->
-	
+
+
+		
 	</xacro:macro>
 	
 	<xacro:environment name="environment" prefix="environment_"/>

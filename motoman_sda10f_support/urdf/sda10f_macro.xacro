@@ -1,51 +1,52 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/common_torso_macro.xacro" />
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/arm_macro.xacro" />
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/robotiq_c2_model_macro.xacro"/>
-	<xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro"/>
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/kinect_macro.xacro" />
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/common_torso_macro.xacro" />
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/arm_macro.xacro" />
+     <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro"/>
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/kinect_macro.xacro" />
 	<xacro:include filename="$(find motoman_sda10f_support)/urdf/environment_macro.xacro"/>
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/visual_environment_macro.xacro"/>
 	<xacro:include filename="$(find motoman_sda10f_support)/urdf/real_sense_macro.xacro"/>
+	<!--xacro:include filename="$(find motoman_sda10f_support)/urdf/zed_macro.xacro"/--><!-- ZED camera LLAMADA EN ENVIRONMENT.XACRO OJOOOOO MODIFICAR ESTO-->
+	<!--xacro:include filename="$(find motoman_sda10f_support)/urdf/aruco_marker_macro.xacro"/-->
+        <xacro:include filename="$(find robotiq_85_description)/urdf/robotiq_85_gripper.xacro" />
 	
-		<xacro:macro name="motoman_sda10f" params="prefix">	
+     <xacro:macro name="motoman_sda10f" params="prefix">	
         
-		<xacro:torso name="${prefix}torso" prefix="${prefix}torso_"/>
+        <xacro:torso name="${prefix}torso" prefix="${prefix}torso_"/>
 
         
-		<xacro:motoman_arm name="${prefix}arm_left" prefix="${prefix}arm_left_" parent="${prefix}torso_link_b1" reflect="1">
-			<origin xyz="0.09996 0.0275 0.32214" rpy="1.57 0 0" />
-		</xacro:motoman_arm>      
+        <xacro:motoman_arm name="${prefix}arm_left" prefix="${prefix}arm_left_" parent="${prefix}torso_link_b1" reflect="1">
+            <origin xyz="0.09996 0.0275 0.32214" rpy="1.57 0 0" />
+        </xacro:motoman_arm>      
         
-		<xacro:motoman_arm name="${prefix}arm_right" prefix="${prefix}arm_right_" parent="${prefix}torso_link_b1" reflect="-1">
-			<origin xyz="0.09996 -0.0275 0.32214" rpy="1.57 0 0" />
-		</xacro:motoman_arm>
+        <xacro:motoman_arm name="${prefix}arm_right" prefix="${prefix}arm_right_" parent="${prefix}torso_link_b1" reflect="-1">
+            <origin xyz="0.09996 -0.0275 0.32214" rpy="1.57 0 0" />
+        </xacro:motoman_arm>
         
-		<!--Grippers-->
-        
-		<xacro:robotiq_c2_model prefix=""/>
+        <!--xacro:robotiq_c2_model prefix=""/-->
 		<xacro:s-model_articulated prefix=""/>
 		
+
+
+
 		<!--Grippers with robot joints-->
        
-		<joint name="left_gripper_to_robot" type="fixed">
-			<parent link="${prefix}arm_left_link_tool0" />
-			<child link = "${prefix}robotiq_85_base_link" />
-			<origin xyz="0 0 -0.034" rpy="0 1.5708 2.3562" />
-		</joint>
-        
+       
 		<joint name="right_gripper_to_robot" type="fixed">
 			<parent link="${prefix}arm_right_link_tool0" />
 			<child link = "${prefix}palm" />
 			<origin xyz="0 0 -0.065" rpy="-1.5708 0 1.5708" />
 		</joint>
-		
+				
 		<!--Create and update TCP pose -->
 		
 		<link name="arm_right_tcp_link" />
 		<link name="arm_left_tcp_link" />
-		
+
+		<xacro:robotiq_85_gripper prefix="" parent="arm_left_link_tool0" >
+        		<origin xyz="0 0 0" rpy="0  1.57 0"/>
+    		</xacro:robotiq_85_gripper>
+
 		<!--Define the position of the TCP with respect to the arm flange-->
 		<joint name="arm_right_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_right_link_tool0" />
@@ -56,9 +57,17 @@
 		<joint name="arm_left_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_left_link_tool0" />
 			<child link = "${prefix}arm_left_tcp_link" />
-			<origin xyz="0 0 -0.15" rpy="3.1416 0 0.7854" />
+			<origin xyz="0 0 -0.13" rpy="3.1416 0 1.5708" />
 		</joint>
+
+
         
-		</xacro:macro>
+     </xacro:macro>
+                
+<!-- The following xacro is kept for backwards compatibility, it should not be used -->
+<!-- see: https://github.com/ros-industrial/motoman/issues/166 -->
+     <!--xacro:macro name="sda10f">
+          <xacro:motoman_sda10f prefix=""/> 
+     </xacro:macro-->
 
 </robot>
