@@ -27,7 +27,7 @@
 			<origin xyz="0 0 0"/>
 			<material name="gray_conveyor"/>
 		</visual>
-</link>
+	</link>
 
 	<link name="feeder_table">
 		<visual>
@@ -154,9 +154,6 @@
 		</visual>
 
 </link>
-
-
-
 
 		<!-- joint list -->
 	<joint name="coveyor_to_robot" type="fixed">
