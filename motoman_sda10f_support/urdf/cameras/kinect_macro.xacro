@@ -63,35 +63,6 @@
 		</visual>
 	</link>
 
-
-
-		<!-- joint list -->
-		
-	<joint name="base_kinect_to_robot" type="fixed"> <!--ACTUALIZAR CON DATA REAL OJO MODIFICAR AQUI-->
-		<parent link="torso_base_link"/>
-		<child link="base_kinect"/>
-		<origin xyz="0.817 0.056 2.07" rpy="1.5708 0 -1.52"/> <!--origin xyz="0.148 0.845 1.6425" rpy="1.54 0 -3.14"/> <ESTA ES LA TRANSFORMADA QUE HAY QUE MEDIR menos 30cm en Z-->
-	</joint>
-	
-	<joint name="base_kinect2_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="base_kinect2"/>
-		<origin xyz="0.9 -3 1.8" rpy="0.2443 0 3.1416"/>
-	</joint>
-	
-	<joint name="base_kinect_to_kinect" type="fixed">
-		<parent link="base_kinect"/>
-		<child link="kinect"/>
-		<origin xyz="0 0 0" rpy="0 0 0"/>
-	</joint>
-	
-	<joint name="base_kinect2_to_kinect2" type="fixed">
-		<parent link="base_kinect2"/>
-		<child link="kinect2"/>
-		<origin xyz="0 0 0" rpy="0 0 0"/>
-	</joint>
-	
-		<!-- end of joint list -->
 	</xacro:macro>
 	
 	<xacro:kinect name="kinect" prefix="kinect_"/>

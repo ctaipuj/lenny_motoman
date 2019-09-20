@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+
+<robot name="zed_camera" xmlns:xacro="http://ros.org/wiki/xacro">
+    <xacro:include filename="$(find motoman_sda10f_support)/urdf/cameras/zed_macro.xacro" />
+    <xacro:zed_camera prefix=""/>
+</robot>

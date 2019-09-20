@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="realsense2_camera" xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:include filename="$(find motoman_sda10f_support)/urdf/cameras/real_sense.urdf.xacro"/>
+  
+  <link name="real_sense_base_camera_link" />
+  <sensor_r430 parent="real_sense_base_camera_link">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </sensor_r430>
+    
+</robot>

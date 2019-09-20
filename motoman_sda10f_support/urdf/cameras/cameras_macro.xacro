@@ -1,0 +1,47 @@
+<?xml version="1.0" ?> 
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/cameras/kinect_macro.xacro" />
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/cameras/zed_macro.xacro"/>
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/cameras/real_sense_macro.xacro"/>
+	
+	<joint name="zed_camera" type="fixed">
+		<parent link="torso_base_link" />
+		<child link = "zed_camera_center" />
+		<origin xyz="0.8 0.05 2.05" rpy="0 1.57 0" />
+	</joint>
+	
+	<joint name="intel_camera" type="fixed">
+  		<parent link="conveyor"/>
+  		<child link="real_sense_base_camera_link"/>
+  		<origin xyz="-2.715 -0.74 1.25" rpy="3.1416 3.1416 3.1416"/>
+  	</joint>
+  
+  	<!--Kinects joint list -->
+		
+	<joint name="base_kinect_to_robot" type="fixed"> <!--UPDATE HERE WITH REAL DATA FROM THE CURRENT KINECT POSITION IF NECESSARY-->
+		<parent link="torso_base_link"/>
+		<child link="base_kinect"/>
+		<origin xyz="0.817 0.056 2.07" rpy="1.5708 0 -1.52"/> <!--origin xyz="0.148 0.845 1.6425" rpy="1.54 0 -3.14"/> <ALWAYS THE Z COORDINATE -30CM SINCE THE BASE LINK IS OVER THE "POLLITO" AT CTAI-->
+	</joint>
+	
+	<joint name="base_kinect2_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="base_kinect2"/>
+		<origin xyz="0.9 -3 1.8" rpy="0.2443 0 3.1416"/>
+	</joint>
+	
+	<joint name="base_kinect_to_kinect" type="fixed">
+		<parent link="base_kinect"/>
+		<child link="kinect"/>
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+	</joint>
+	
+	<joint name="base_kinect2_to_kinect2" type="fixed">
+		<parent link="base_kinect2"/>
+		<child link="kinect2"/>
+		<origin xyz="0 0 0" rpy="0 0 0"/>
+	</joint>
+	
+		<!-- end of joint list -->
+		               
+</robot>

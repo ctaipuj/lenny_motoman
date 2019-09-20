@@ -70,4 +70,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <link name="zed_right_camera_optical_frame"/>
 
     </xacro:macro>
+    
+    <xacro:zed_camera prefix=""/>
+    
 </robot>

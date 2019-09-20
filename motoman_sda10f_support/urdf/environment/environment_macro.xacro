@@ -1,10 +1,7 @@
 <?xml version="1.0" ?>
 <model xmlns:xacro="http://ros.org/wiki/xacro">
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/zed_macro.xacro"/><!-- ZED camera -->
+	
 	<xacro:macro name="environment" params="name prefix">
-	<xacro:zed_camera prefix=""/>
-
-
 
 		<!-- link list -->
 	<link name="conveyor">
@@ -83,8 +80,8 @@
 				<mesh filename="package://motoman_sda10f_support/meshes/environment/table_new.stl" scale="0.001 0.001 0.001"/>
 			</geometry>
 			<origin xyz="0 0 0"/>
-			<material name="gray_conveyor">
-				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/red.png"/>
+			<material name="gray_worktable">
+				<color rgba="${45/255} ${135/255} ${149/255} 1"/>
 			</material>
 		</visual>
 
@@ -231,15 +228,6 @@
 		<origin xyz="-1.35 0.6 -0.3" rpy="0 0 -1.5708"/> <!Sumo 5cm a las MPS por si acaso-->
 	<!--/joint-->
 
-	<!-- Camera zed -->
-
-	<joint name="zed_camera" type="fixed">
-		<parent link="torso_base_link" />
-		<child link = "zed_camera_center" />
-		<origin xyz="0.8 0.05 2.05" rpy="0 1.57 0" />
-	</joint>
-
-
 	<joint name="tooltable_to_robot" type="fixed">
 		<parent link="conveyor"/>
 		<child link="tool_table"/>
@@ -248,8 +236,6 @@
 	
 		<!-- end of joint list -->
 
-
-		
 	</xacro:macro>
 	
 	<xacro:environment name="environment" prefix="environment_"/>
