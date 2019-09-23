@@ -22,6 +22,7 @@ This Package contains the support elements required when using Lenny.
 
 * [MoveIt!](https://moveit.ros.org)
 * [Industrial core](http://wiki.ros.org/industrial_core)
+* [Lenny End Effectors](https://github.com/ctaipuj/lenny_ee)
 
 ## Video
 
