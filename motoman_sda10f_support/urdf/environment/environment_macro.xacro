@@ -237,5 +237,4 @@
 	
 	<xacro:environment name="environment" prefix="environment_"/>
 	
-	
 </model>
