@@ -1,14 +1,19 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-     <xacro:include filename="$(find motoman_sda10f_support)/urdf/common_torso_macro.xacro" />
-     <xacro:include filename="$(find motoman_sda10f_support)/urdf/arm_macro.xacro" />
-     <xacro:include filename="$(find robotiq_s_model_visualization)/cfg/s-model_articulated_macro.xacro"/>
-     <xacro:include filename="$(find motoman_sda10f_support)/urdf/kinect_macro.xacro" />
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/environment_macro.xacro"/>
-	<xacro:include filename="$(find motoman_sda10f_support)/urdf/real_sense_macro.xacro"/>
-	<xacro:include filename="$(find robotiq_85_description)/urdf/robotiq_85_gripper.xacro" />
+	<!-- Robot include-->
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/lenny/common_torso_macro.xacro" />
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/lenny/arm_macro.xacro" />
+     <!-- Grippers include-->
+     <xacro:include filename="$(find robotiq_2f_85_gripper_visualization)/urdf/robotiq_arg2f_85_model.xacro"/>
+     <xacro:include filename="$(find robotiq_3f_gripper_visualization)/cfg/robotiq-3f-gripper_articulated.xacro"/>
+     <!-- Cameras include-->
+     <xacro:include filename="$(find motoman_sda10f_support)/urdf/cameras/cameras_macro.xacro" />
+     <!-- Environment include-->
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/environment/environment_macro.xacro"/>
+	<xacro:include filename="$(find motoman_sda10f_support)/urdf/environment/visual_environment_macro.xacro"/>
+	<!--xacro:include filename="$(find motoman_sda10f_support)/urdf/environment/aruco_marker_macro.xacro"/<!-Used for camera calibration ONLY-->
 	
-     <xacro:macro name="motoman_sda10f" params="prefix">
+     <xacro:macro name="motoman_sda10f" params="prefix">	
         
         <xacro:torso name="${prefix}torso" prefix="${prefix}torso_"/>
 
@@ -20,16 +25,15 @@
         <xacro:motoman_arm name="${prefix}arm_right" prefix="${prefix}arm_right_" parent="${prefix}torso_link_b1" reflect="-1">
             <origin xyz="0.09996 -0.0275 0.32214" rpy="1.57 0 0" />
         </xacro:motoman_arm>
+             
+        <!--Grippers with robot joints-->
+       
+		<joint name="left_gripper_to_robot" type="fixed">
+			<parent link="${prefix}arm_left_link_tool0" />
+			<child link = "${prefix}robotiq_arg2f_base_link" />
+			<origin xyz="0 0 0" rpy="0 3.1416 -0.7854" />
+		</joint>
         
-        <!--xacro:robotiq_c2_model prefix=""/-->
-		<xacro:s-model_articulated prefix=""/>
-		
-
-
-
-		<!--Grippers with robot joints-->
-       
-       
 		<joint name="right_gripper_to_robot" type="fixed">
 			<parent link="${prefix}arm_right_link_tool0" />
 			<child link = "${prefix}palm" />
@@ -40,11 +44,7 @@
 		
 		<link name="arm_right_tcp_link" />
 		<link name="arm_left_tcp_link" />
-
-		<xacro:robotiq_85_gripper prefix="" parent="arm_left_link_tool0" >
-        		<origin xyz="0 0 0" rpy="0  1.57 0"/>
-    		</xacro:robotiq_85_gripper>
-
+		
 		<!--Define the position of the TCP with respect to the arm flange-->
 		<joint name="arm_right_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_right_link_tool0" />
@@ -55,10 +55,8 @@
 		<joint name="arm_left_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_left_link_tool0" />
 			<child link = "${prefix}arm_left_tcp_link" />
-			<origin xyz="0 0 -0.11" rpy="3.1416 0 1.5708" />
+			<origin xyz="0 0 -0.15" rpy="3.1416 0 0.7854" />
 		</joint>
-
-
         
      </xacro:macro>
                 
