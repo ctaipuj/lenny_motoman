@@ -31,5 +31,5 @@ int main(int argc, char* argv[]){
 	ros::Duration(5).sleep();
 	my_variable.turnOff(25012);
 	
-	return 0;
+//	return 0;
 }

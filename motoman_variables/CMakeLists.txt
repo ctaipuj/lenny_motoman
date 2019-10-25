@@ -26,12 +26,16 @@ find_package(catkin REQUIRED COMPONENTS
 ## LIBRARIES: libraries you create in this project that dependent projects also need
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
+
+
 catkin_package(
   INCLUDE_DIRS include
   LIBRARIES motoman_variables
   CATKIN_DEPENDS motoman_driver motoman_msgs roscpp rospy
 #  DEPENDS system_lib
 )
+
+
 
 ###########
 ## Build ##
@@ -70,3 +74,7 @@ install(TARGETS motoman_variables
 ## The recommended prefix ensures that target names across packages don't collide
 add_executable(lenny_variable_sample src/lenny_variable_sample.cpp src/motoman_variables.cpp)
 target_link_libraries(lenny_variable_sample ${catkin_LIBRARIES})
+
+add_executable(control_outputs  src/control_outputs.cpp src/motoman_variables.cpp)
+target_link_libraries(control_outputs ${catkin_LIBRARIES})
+

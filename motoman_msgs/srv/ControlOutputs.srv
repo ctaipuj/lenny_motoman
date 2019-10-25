@@ -1,0 +1,6 @@
+string action
+string turn_on_off
+uint32 variable
+---
+int32 state
+string status

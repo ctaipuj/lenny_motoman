@@ -1,0 +1,6 @@
+<launch>
+
+	<node pkg="motoman_variables"  type="control_outputs" name="control_outputs" output="screen" >
+		</node>
+
+</launch>

@@ -5,16 +5,21 @@
 //Controller required services
 #include <motoman_msgs/WriteSingleIO.h> 
 #include <motoman_msgs/ReadSingleIO.h>
+#include <motoman_msgs/ControlOutputs.h>
 
 #define I0 25010
 #define I2 25012
 #define I4 25014
 #define I6 25016
 
+
+////This was edited from the original class by Wislon H///
+
 /** @brief This class is used to set, reset and edit network inputs of the FS100 robot controller.
 	
 	ROS only can write/read network inputs #25xxx. This class uses the ROS services WriteSingleIO and ReadSingleIO to access and edit controller's data. To generate an external output it is necessary to edit the ladder program of the controler in order to activate the #30xxx outputs. Currently the 25010, 25012, 25014 and 25016 network inputs are connected to external outputs 30030, 30032, 30034 and 30036 respectively. This class accepts the shorcuts 0, 2, 4, 6 too. This class allso defines the inputs as I0, I2, I3, I4; I6. You can read/write any other network input however currently they are no related to any external output.
 	@author Barrero Lizarazo, Nicolas
+	@edited Wilson Hernandez
 	@date September 2018
 	*/
 
@@ -29,10 +34,20 @@ class motoman_variables{
 		
 		int address;
 		int value;
+		bool control_;
 		
 		void call_writter();
 		int call_reader();
 		bool validateAddress();
+
+
+		ros::NodeHandle nh_;
+		ros::ServiceServer service_;
+
+	protected:
+
+		ros::AsyncSpinner spinner;
+		bool actionsOutput(motoman_msgs::ControlOutputs::Request  &req, motoman_msgs::ControlOutputs::Response &res);
 	
 	public:
 	/** The constructor initializes two service clients one from WriteSingleIO service and the other from ReadSingleIO. 
