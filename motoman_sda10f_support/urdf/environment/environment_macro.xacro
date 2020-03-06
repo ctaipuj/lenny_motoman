@@ -4,11 +4,11 @@
 	<xacro:macro name="environment" params="name prefix">
 
 		<!-- link list -->
-	<link name="conveyor">
+
+	<link name="arm_right_gripper_support">
 		<visual>
 			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/conveyor.stl" scale="0.01 0.01 0.01"/>
-				<!--IF .STL IS IN mm DUE SOLIDWORKS CONFLICT USE: scale="0.001 0.001 0.001" in mesh line-->
+				<cylinder length="0.01" radius="0.04"/>
 			</geometry>
 			<origin xyz="0 0 0"/>
 			<material name="gray_conveyor">
@@ -16,13 +16,24 @@
 				<!--color rgba="${240/255} ${240/255} ${240/255} 1"/-->
 			</material>
 		</visual>
-</link>
-
-
-	<link name="arm_right_gripper_support">
+	</link>
+	
+	<link name="controller">
 		<visual>
 			<geometry>
-				<cylinder length="0.01" radius="0.04"/>
+				<box size="0.9 0.95 0.66"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="black">
+			<color rgba="${40/255} ${40/255} ${40/255} 1"/>
+			</material>
+		</visual>
+	</link>
+	
+	<link name="arm_left_gripper_support">
+		<visual>
+			<geometry>
+				<cylinder length="0.026" radius="0.04"/>
 			</geometry>
 			<origin xyz="0 0 0"/>
 			<material name="gray_conveyor"/>
@@ -37,56 +48,7 @@
 			<origin xyz="0 0 0"/>
 			<material name="gray_conveyor"/>
 		</visual>
-</link>
-
-	<link name="feeder_table_2">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/feeder_table.stl" scale="0.01 0.01 0.01"/>
-			</geometry>
-			<origin xyz="0 0 0"/>
-			<material name="gray_conveyor"/>
-		</visual>
-</link>
-
-	<!--link name="table">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/table.STL"/>
-			</geometry>
-			<origin xyz="-0.615 0 -0.76"/>
-			<material name="beige_table">
-				<color rgba="${249/255} ${226/255} ${211/255} 1"/>
-				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/beige.png"/>
-			</material>
-		</visual>
-</link-->
-
-	<!--link name="worktable">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/worktable.STL" scale="0.001 0.001 0.001"/>
-			</geometry>
-			<origin xyz="-0.625 0 0"/>
-			<material name="gray_worktable">
-				<color rgba="${45/255} ${135/255} ${149/255} 1"/>
-			</material>
-		</visual>
-</link-->
-
-	<link name="worktable">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/table_new.stl" scale="0.001 0.001 0.001"/>
-			</geometry>
-			<origin xyz="0 0 0"/>
-			<material name="gray_worktable">
-				<color rgba="${45/255} ${135/255} ${149/255} 1"/>
-			</material>
-		</visual>
-
-</link>
-
+	</link>
 
 	<link name="beacon">
 		<visual>
@@ -98,49 +60,7 @@
 				<color rgba="${255/255} ${255/255} ${0/255} 1"/>
 			</material>
 		</visual>
-</link>
-
-	<!--link name="bin">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/bin.STL"/>
-			</geometry>
-			<origin xyz="0 0 -0.52"/>
-			<material name="blue">
-				<color rgba="255 69 30 0.9"/>
-			</material>
-		</visual>
-</link-->
-
-	<!--link name="mps">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/MPS.STL"/>
-			</geometry>
-			<origin xyz="-0.7 0 -1.40"/>
-			<material name="festo">
-				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/aqua.png"/>
-			</material>
-		</visual>
-		<collision>
-				<geometry>
-					<mesh filename="package://motoman_sda10f_support/meshes/environment/MPS.STL" />
-				</geometry>
-				<origin xyz= "-0.7 0 -1.40"/>
-		</collision>
-</link-->
-
-	<!--link name="MPS_FAKE">
-		<visual>
-			<geometry>
-				<mesh filename="package://motoman_sda10f_support/meshes/environment/MPS_FAKE.stl" scale="0.008 0.008 0.008"/>
-			</geometry>
-			<origin xyz="0 0 0"/>
-			<material name="cyan_mps">
-				<color rgba="${168/255} ${224/255} ${198/255} 1"/>
-			</material>
-		</visual>
-</link-->
+	</link>
 
 	<link name="tool_table">
 		<visual>
@@ -153,16 +73,22 @@
 			</material>
 		</visual>
 
-</link>
-
-		<!-- joint list -->
-	<joint name="coveyor_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="conveyor"/>
-		<!--origin xyz="-2.92 -2.45 0.13" rpy="0 0 -1.571" OJO 0.618 PARA LA BANDA ORIGINAL/-->
-		<origin xyz="0.572 -1.244 -0.252" rpy="0 0 -1.571"/>
-	</joint>
+	</link>
 	
+	<link name="marco_fake">
+		<visual>
+			<geometry>
+				<box size="1.55 0.05 0.68"/>
+			</geometry>
+			<origin xyz="0 0 0"/>
+			<material name="gray_conveyor">
+				<texture filename="package://motoman_sda10f_support/meshes/environment/textures/red.png"/>
+			</material>
+		</visual>
+
+	</link>
+
+		<!-- joint list -->	
 	
 	<joint name="arm_right_gripper_support_to_robot" type="fixed">
 		<parent link="arm_right_link_tool0"/>
@@ -170,65 +96,40 @@
 		<origin xyz="0 0 -0.015" rpy="0 0 0"/>
 	</joint>
 	
+	<joint name="arm_left_gripper_support_to_robot" type="fixed">
+		<parent link="arm_left_link_tool0"/>
+		<child link="arm_left_gripper_support"/>
+		<origin xyz="0 0 -0.015" rpy="0 0 0"/>
+	</joint>
+	
 	<joint name="feeder_table_to_robot" type="fixed">
 		<parent link="torso_base_link"/>
 		<child link="feeder_table"/>
-		<origin xyz="0.05 0.47 -0.3" rpy="0 0 1.5708"/>
+		<origin xyz="0.8 -0.512 -0.3" rpy="0 0 1.5708"/>
 	</joint>
-	
-	<joint name="feeder_table_2_to_robot" type="fixed">
-		<parent link="feeder_table"/>
-		<child link="feeder_table_2"/>
-		<origin xyz="1.11 0 0" rpy="0 0 0"/>
-	</joint>
-	
-	<!--joint name="table_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="table"/>
-		<origin xyz="0.7 0 -0.34" rpy="1.571 0 -1.571"/> 
-	</joint-->
-	
-	<!--joint name="worktable_to_robot" type="fixed">
-		<parent link="table"/>
-		<child link="worktable"/>
-		<origin xyz="0 1.28 -0.76" rpy="0 0 0"/>
-	</joint-->
-
-	<joint name="worktable_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="worktable"/>
-		<origin xyz="0.52 0 0.29" rpy="0 0  1.57"/>
-	</joint>	
-
 	
 	<joint name="beacon_to_robot" type="fixed">
 		<parent link="torso_link_b1"/>
 		<child link="beacon"/>
 		<origin xyz="0.1 0 0.46" rpy="1.571 0 0"/>
 	</joint>
-	
-		<!--joint name="bin_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="bin"/>
-		<origin xyz="-0.53 -0.54 -0.3" rpy="1.571 0 1.571"/>
-	</joint-->
-	
-		<!--joint name="mps_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="mps"/>
-		<origin xyz="-0.111 -1.405 -0.3" rpy="1.571 0 1.571"/--> <!--Sumo 5cm a las MPS por si acaso-->
-	<!--/joint-->
-	
-	<!--joint name="MPS_FAKE_to_robot" type="fixed">
-		<parent link="torso_base_link"/>
-		<child link="MPS_FAKE"/>
-		<origin xyz="-1.35 0.6 -0.3" rpy="0 0 -1.5708"/> <!Sumo 5cm a las MPS por si acaso-->
-	<!--/joint-->
 
 	<joint name="tooltable_to_robot" type="fixed">
-		<parent link="conveyor"/>
+		<parent link="torso_base_link"/>
 		<child link="tool_table"/>
-		<origin xyz="-1.8 -1.33 0.68" rpy="1.57 0 3.14"/>
+		<origin xyz="-0.333 -0.02 0.382" rpy="1.57 0 3.14"/>
+	</joint>
+	
+	<joint name="controller_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="controller"/>
+		<origin xyz="-0.85 -0.075 0.03" rpy="0 0 0"/>
+	</joint>
+	
+	<joint name="marco_to_robot" type="fixed">
+		<parent link="torso_base_link"/>
+		<child link="marco_fake"/>
+		<origin xyz="0.37 0.59 0.03" rpy="0 0 0"/>
 	</joint>
 	
 		<!-- end of joint list -->

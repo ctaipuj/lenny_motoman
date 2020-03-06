@@ -30,7 +30,7 @@
 		<joint name="left_gripper_to_robot" type="fixed">
 			<parent link="${prefix}arm_left_link_tool0" />
 			<child link = "${prefix}robotiq_arg2f_base_link" />
-			<origin xyz="0 0 0" rpy="0 3.1416 -0.7854" />
+			<origin xyz="0 0 -0.026" rpy="0 3.1416 -0.7854" />
 		</joint>
         
 		<joint name="right_gripper_to_robot" type="fixed">
@@ -48,13 +48,13 @@
 		<joint name="arm_right_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_right_link_tool0" />
 			<child link = "${prefix}arm_right_tcp_link" />
-			<origin xyz="0 0 -0.23" rpy="3.1416 0 1.5708" />
+			<origin xyz="0 0 -0.221" rpy="3.1416 0 1.5708" />
 		</joint>
 
 		<joint name="arm_left_tool0_to_tcp" type="fixed" >
 			<parent link="${prefix}arm_left_link_tool0" />
 			<child link = "${prefix}arm_left_tcp_link" />
-			<origin xyz="0 0 -0.15" rpy="3.1416 0 0.7854" />
+			<origin xyz="0 0 -0.15725" rpy="3.1416 0 0.7854" />
 		</joint>
         
      </xacro:macro>
